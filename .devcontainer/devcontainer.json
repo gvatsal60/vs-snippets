@@ -1,5 +1,4 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:jammy",
   "capAdd": [
     "SYS_PTRACE"
   ],
@@ -25,12 +24,16 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.detectIndentation": false,
         "editor.insertSpaces": true,
+        "editor.snippetSuggestions": "top",
         "editor.tabCompletion": "on",
         "editor.tabSize": 2,
         "editor.trimAutoWhitespace": true,
         "explorer.confirmDelete": false,
         "extensions.autoUpdate": true,
         "extensions.ignoreRecommendations": true,
+        "files.associations": {
+          "*.code-snippets": "jsonc"
+        },
         "files.autoSave": "afterDelay",
         "files.eol": "auto",
         "files.exclude": {
@@ -50,8 +53,13 @@
     }
   },
   "features": {
+    "ghcr.io/gvatsal60/dev-container-features/pre-commit": {},
     "ghcr.io/gvatsal60/dev-container-features/sonarlint": {}
   },
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "mounts": [
+    "source=${localWorkspaceFolder}/snippets,target=${containerWorkspaceFolder}/.vscode,type=bind,consistency=cached,readonly"
+  ],
   "postCreateCommand": "chmod +x ${containerWorkspaceFolder}/.devcontainer/postCreateScript.sh && ${containerWorkspaceFolder}/.devcontainer/postCreateScript.sh",
   "runArgs": [
     "--rm",
