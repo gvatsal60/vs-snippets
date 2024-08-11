@@ -1,6 +1,6 @@
 /**
- * @file js.code-snippets
- * @brief Contains custom code snippets for Javascript
+ * @file csharp.code-snippets
+ * @brief Contains custom code snippets for C#
  *
  * This file provides a collection of code snippets designed to facilitate rapid
  * development by offering quick access to commonly used patterns and boilerplate
@@ -14,10 +14,10 @@
 
 {
   /***************************************************************************************
-   * File Template
+   * Header File Template
    **************************************************************************************/
-  "JavaScript File Template": {
-    "scope": "javascript",
+  "C# File Template": {
+    "scope": "csharp",
     "prefix": "template",
     "body": [
       "/***************************************************************************************",
@@ -36,63 +36,58 @@
       " */",
       "",
       "/***************************************************************************************",
-      " * Imports",
+      " * Includes",
       " **************************************************************************************/",
+      "using System;",
       "",
+      "namespace ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}",
+      "{",
       "/***************************************************************************************",
       " * Constants",
       " **************************************************************************************/",
       "",
       "/***************************************************************************************",
-      " * Function Declarations",
+      " * Structure Declarations",
       " **************************************************************************************/",
       "",
       "/***************************************************************************************",
-      " * Main Code",
+      " * Class Declarations",
       " **************************************************************************************/",
-      ""
+      "",
+      "}"
     ],
-    "description": "JavaScript file template",
+    "description": "CSharp file template",
     "isFileTemplate": true
   },
-
   /***************************************************************************************
    * Debugging
    **************************************************************************************/
   "Log Hex Value": {
-    "scope": "javascript",
+    "scope": "csharp",
     "prefix": "hlog",
     // FIXME
-    "body": [
-      "console.log('${TM_FILENAME}:%d', 0 ${BLOCK_COMMENT_START} lineNumber ${BLOCK_COMMENT_END}, $1); ${LINE_COMMENT} REMOVE"
-    ],
+    "body": [],
     "description": "Log hex value to console"
   },
   "Log String Value": {
-    "scope": "javascript",
+    "scope": "csharp",
     "prefix": "slog",
     // FIXME
-    "body": [
-      "console.log('${TM_FILENAME}:%d', 0 ${BLOCK_COMMENT_START} lineNumber ${BLOCK_COMMENT_END}, $1); ${LINE_COMMENT} REMOVE"
-    ],
+    "body": [],
     "description": "Log string value to console"
   },
   "Log Function Name": {
-    "scope": "javascript",
+    "scope": "csharp",
     "prefix": "log0",
     // FIXME
-    "body": [
-      "console.log('${TM_FILENAME}:%d', 0 ${BLOCK_COMMENT_START} lineNumber ${BLOCK_COMMENT_END}); ${LINE_COMMENT} REMOVE"
-    ],
+    "body": [],
     "description": "Log function name with line number to console"
   },
   "Log Variable Value": {
-    "scope": "javascript",
+    "scope": "csharp",
     "prefix": "log1",
     // FIXME
-    "body": [
-      "console.log('${TM_FILENAME}:%d', 0 ${BLOCK_COMMENT_START} lineNumber ${BLOCK_COMMENT_END}, $1); ${LINE_COMMENT} REMOVE"
-    ],
+    "body": [],
     "description": "Log variable value to console"
   }
 }

@@ -1,6 +1,6 @@
 /**
- * @file js.code-snippets
- * @brief Contains custom code snippets for Javascript
+ * @file typescript.code-snippets
+ * @brief Contains custom code snippets for Typescript
  *
  * This file provides a collection of code snippets designed to facilitate rapid
  * development by offering quick access to commonly used patterns and boilerplate
@@ -16,8 +16,8 @@
   /***************************************************************************************
    * File Template
    **************************************************************************************/
-  "JavaScript File Template": {
-    "scope": "javascript",
+  "Typescript File Template": {
+    "scope": "typescript",
     "prefix": "template",
     "body": [
       "/***************************************************************************************",
@@ -44,55 +44,23 @@
       " **************************************************************************************/",
       "",
       "/***************************************************************************************",
-      " * Function Declarations",
+      " * Interfaces",
       " **************************************************************************************/",
       "",
       "/***************************************************************************************",
-      " * Main Code",
+      " * Classes",
+      " **************************************************************************************/",
+      "",
+      "/***************************************************************************************",
+      " * Functions",
       " **************************************************************************************/",
       ""
     ],
-    "description": "JavaScript file template",
+    "description": "typescript file template",
     "isFileTemplate": true
-  },
-
+  }
   /***************************************************************************************
    * Debugging
    **************************************************************************************/
-  "Log Hex Value": {
-    "scope": "javascript",
-    "prefix": "hlog",
-    // FIXME
-    "body": [
-      "console.log('${TM_FILENAME}:%d', 0 ${BLOCK_COMMENT_START} lineNumber ${BLOCK_COMMENT_END}, $1); ${LINE_COMMENT} REMOVE"
-    ],
-    "description": "Log hex value to console"
-  },
-  "Log String Value": {
-    "scope": "javascript",
-    "prefix": "slog",
-    // FIXME
-    "body": [
-      "console.log('${TM_FILENAME}:%d', 0 ${BLOCK_COMMENT_START} lineNumber ${BLOCK_COMMENT_END}, $1); ${LINE_COMMENT} REMOVE"
-    ],
-    "description": "Log string value to console"
-  },
-  "Log Function Name": {
-    "scope": "javascript",
-    "prefix": "log0",
-    // FIXME
-    "body": [
-      "console.log('${TM_FILENAME}:%d', 0 ${BLOCK_COMMENT_START} lineNumber ${BLOCK_COMMENT_END}); ${LINE_COMMENT} REMOVE"
-    ],
-    "description": "Log function name with line number to console"
-  },
-  "Log Variable Value": {
-    "scope": "javascript",
-    "prefix": "log1",
-    // FIXME
-    "body": [
-      "console.log('${TM_FILENAME}:%d', 0 ${BLOCK_COMMENT_START} lineNumber ${BLOCK_COMMENT_END}, $1); ${LINE_COMMENT} REMOVE"
-    ],
-    "description": "Log variable value to console"
-  }
+  // TODO
 }
