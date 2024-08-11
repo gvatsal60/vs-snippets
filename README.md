@@ -8,32 +8,77 @@
 ![GitHub forks](https://img.shields.io/github/forks/gvatsal60/vs-snippets)
 ![GitHub stars](https://img.shields.io/github/stars/gvatsal60/vs-snippets)
 
-This repository serves as a foundational template for new projects, equipped with essential tools for
-maintaining code quality and documentation consistency. It includes:
+A collection of useful user snippets designed for file templates in Visual Studio Code.
+This repository provides pre-configured code snippets that streamline your development process, making it quicker and easier to generate boilerplate code for various file types.
+Whether you're working on a new project or maintaining an existing one, these snippets can enhance productivity and ensure consistency across your codebase.
 
-1. README.md
-2. LICENSE
-3. .gitignore
-4. CODE_OF_CONDUCT.md
-5. CONTRIBUTING.md
-6. FUNDING.yml
-7. CHANGELOG.md
+## Configuring User Snippets in VSCode
 
-## Installation
+This guide will walk you through the steps to configure user snippets in Visual Studio Code (VSCode) using a collection of snippets from a GitHub repository.
 
-To install Project Template, follow these steps:
+## Prerequisites
 
-1. **Clone the repository:**
+Make sure you have the following installed:
 
-   ```bash
-   git clone https://github.com/gvatsal60/vs-snippets.git
-   cd vs-snippets
-   ```
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/)
 
-2. **Customize According to Your Project:**
-   * Replace `[Project Name]`
-   * Update `[contact email]`
-   * Follow `[coding style guide]`
+## Steps to Configure User Snippets
+
+### 1. **Clone the Snippets Repository**
+
+First, clone the repository containing the user snippets to your local machine:
+
+```sh
+git clone https://github.com/gvatsal60/vs-snippets.git
+```
+
+### 2. **Navigate to the Snippets Directory**
+
+Change your directory to where the snippets are located:
+
+``` sh
+cd vs-snippets/snippets
+```
+
+### 3. **Copy the Snippets**
+
+You will see various snippet files in this directory. To use these snippets, copy them to your VSCode snippets folder.
+You can do this manually or via the terminal.
+
+- Manually:
+  - Open VSCode.
+  - Go to File > Preferences > User Snippets.
+  - Select the language for which you want to add snippets, or create a new global snippets file.
+  - Copy the content from the .json files you downloaded and paste it into the appropriate snippet file.
+
+- Using Terminal (For Linux and Mac Only):
+
+    ``` sh
+    cp *.code-snippets ~/.config/Code/User/snippets/
+    ```
+
+### 4. **Reload VSCode**
+
+To apply the changes, you might need to reload or restart VSCode. You can do this by:
+
+- Pressing Ctrl+Shift+P to open the Command Palette.
+- Typing Reload Window and pressing Enter.
+
+### 5. **Verify Snippets**
+
+To ensure that your snippets are working correctly:
+
+- Open a file of the language for which the snippets are intended.
+- Start typing a snippet prefix to see if the snippet suggestions appear.
+
+## Troubleshooting
+
+If snippets are not showing up, make sure there are no syntax errors in your snippet files.
+Verify that the snippets file is in the correct directory.
+Check the VSCode documentation for more detailed guidance on snippets.
+
+For more information on creating and managing snippets in VSCode, you can refer to the official [documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets).
 
 ## Contributing
 
