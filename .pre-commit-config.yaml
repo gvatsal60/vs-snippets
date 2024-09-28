@@ -47,7 +47,7 @@ repos:
       - id: clang-format
   # ESLint for linting JavaScript and TypeScript files
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: "v9.10.0"
+    rev: "v9.11.0"
     hooks:
       - id: eslint
   # Runs mypy to check Python type annotations.
@@ -89,7 +89,7 @@ repos:
         types: [shell]
   # Actionlint for linting GitHub Actions YAML files
   - repo: https://github.com/rhysd/actionlint
-    rev: "v1.7.1"
+    rev: "v1.7.2"
     hooks:
       - id: actionlint
   # Yamlfmt for formatting YAML files
