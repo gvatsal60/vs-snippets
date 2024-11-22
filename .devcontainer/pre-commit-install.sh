@@ -101,5 +101,5 @@ if [ -f "${PRE_COMMIT_FILE}" ]; then
 
     run_pre_commit
 else
-    echo "$PRE_COMMIT_FILE file not found. Skipping pre-commit check."
+    echo "${PRE_COMMIT_FILE} file not found. Skipping pre-commit check."
 fi
