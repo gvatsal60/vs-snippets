@@ -9,10 +9,7 @@ repos:
     rev: "v6.0.0"
     hooks:
       - id: check-added-large-files
-      - id: check-ast
-      - id: check-builtin-literals
       - id: check-case-conflict
-      - id: check-docstring-first
       - id: check-executables-have-shebangs
       - id: check-json
       - id: check-merge-conflict
@@ -20,56 +17,16 @@ repos:
       - id: check-symlinks
       - id: check-toml
       - id: check-vcs-permalinks
-      - id: check-xml
       - id: check-yaml
-      - id: debug-statements
       - id: destroyed-symlinks
-      # - id: detect-aws-credentials
       - id: detect-private-key
       - id: double-quote-string-fixer
       - id: end-of-file-fixer
       - id: fix-byte-order-marker
       - id: mixed-line-ending
-      - id: name-tests-test
       - id: pretty-format-json
         args: [--autofix]
-      - id: requirements-txt-fixer
       - id: trailing-whitespace
-  # Uses pygrep to enforce Python type annotations.
-  - repo: https://github.com/pre-commit/pygrep-hooks
-    rev: "v1.10.0"
-    hooks:
-      - id: python-use-type-annotations
-  # Clang-format for formatting C, C++, and JavaScript files
-  - repo: https://github.com/pre-commit/mirrors-clang-format
-    rev: "v21.1.0"
-    hooks:
-      - id: clang-format
-  # ESLint for linting JavaScript and TypeScript files
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: "v9.35.0"
-    hooks:
-      - id: eslint
-  # Runs mypy to check Python type annotations.
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.18.1"
-    hooks:
-      - id: mypy
-  # Runs JSHint to analyze JavaScript code for potential errors.
-  - repo: https://github.com/pre-commit/mirrors-jshint
-    rev: "v2.13.6"
-    hooks:
-      - id: jshint
-  # Uses fixmyjs to automatically fix simple JavaScript issues.
-  - repo: https://github.com/pre-commit/mirrors-fixmyjs
-    rev: "v2.0.0"
-    hooks:
-      - id: fixmyjs
-  # Runs CSSLint to check CSS files for errors and stylistic issues.
-  - repo: https://github.com/pre-commit/mirrors-csslint
-    rev: "v1.0.5"
-    hooks:
-      - id: csslint
   # ShellCheck hook for linting shell scripts
   - repo: https://github.com/shellcheck-py/shellcheck-py
     rev: "v0.11.0.1"
@@ -102,11 +59,6 @@ repos:
     rev: "v2.4.1"
     hooks:
       - id: codespell
-  # Checkmake for linting Makefiles
-  - repo: https://github.com/mrtazz/checkmake
-    rev: "0.2.2"
-    hooks:
-      - id: checkmake
   # Gitleaks for detecting secrets in Git repositories
   - repo: https://github.com/gitleaks/gitleaks
     rev: "v8.28.0"
@@ -118,3 +70,9 @@ repos:
     hooks:
       - id: talisman-commit
         entry: cmd --githook pre-commit
+  # Markdownlint for linting Markdown files
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.18.1
+    hooks:
+      - id: markdownlint-cli2
+        args: [--fix]

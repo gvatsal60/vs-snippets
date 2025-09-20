@@ -1,8 +1,9 @@
 # 🚀 vs-snippets 🚀
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://img.shields.io/github/license/gvatsal60/vs-snippets)
-[![build status](https://github.com/gvatsal60/vs-snippets/actions/workflows/readme-checker.yaml/badge.svg)](https://github.com/gvatsal60/vs-snippets/actions/workflows/readme-checker.yaml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/gvatsal60/vs-snippets/master.svg)](https://results.pre-commit.ci/latest/github/gvatsal60/vs-snippets/HEAD)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9883e9aec79f4a67a4de9cccdf47a13e)](https://app.codacy.com/gh/gvatsal60/vs-snippets/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/gvatsal60/vs-snippets/badge)](https://www.codefactor.io/repository/github/gvatsal60/vs-snippets)
 ![GitHub pull-requests](https://img.shields.io/github/issues-pr/gvatsal60/vs-snippets)
 ![GitHub Issues](https://img.shields.io/github/issues/gvatsal60/vs-snippets)
 ![GitHub forks](https://img.shields.io/github/forks/gvatsal60/vs-snippets)
