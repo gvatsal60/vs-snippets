@@ -113,3 +113,8 @@ lib/
 dist/
 bower_components/
 *.min.js
+
+# Codacy
+######################
+.codacy.yml
+.codacy/
